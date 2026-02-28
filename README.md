@@ -85,3 +85,11 @@ To stop the session, press `Ctrl+C` in the terminal where `stream.sh` is running
 - **No device found**: Check your USB cable and ensure "USB Debugging" is on.
 - **FFmpeg error**: Ensure you have granted Screen Recording permissions and that the `DISPLAY_INDEX` in `stream.sh` is correct.
 - **High latency**: Use a high-quality USB cable. The script is configured to use `h264_videotoolbox` (hardware encoding) for best performance on Mac.
+
+## Contributing
+
+Contributions are welcome! If you have ideas for enhancements, bug fixes, or new features, feel free to raise a request via a **Pull Request (PR)**. I am happy to review and accept improvements from the community.
+
+## License
+
+This project is fully open-source and released under the [MIT License](LICENSE). You are free to use, modify, and distribute it as you wish.
