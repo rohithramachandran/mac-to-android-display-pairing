@@ -40,16 +40,32 @@ Connect your tablet/phone via USB and ensure it's recognized:
 adb devices
 ```
 
-### 3. Start the Extended Display
-Run the provided stream script. This will:
-- Set up ADB port forwarding.
-- (Optional) Install the Android app if you have the build environment set up.
-- Start the Android app.
-- Begin streaming via FFmpeg.
+### 3. Install the Android App
 
+You have two options for the Android receiver app:
+
+#### Option A: Use Pre-built APK (Recommended)
+The repository includes a pre-built debug APK. You don't need to build the Android project unless you want to make changes.
+- **Location**: `android/app/build/outputs/apk/debug/app-debug.apk`
+- **Install via ADB**:
+  ```bash
+  adb install android/app/build/outputs/apk/debug/app-debug.apk
+  ```
+
+#### Option B: Build from Source (Optional)
+If you want to modify the app or build it yourself:
+- Open the `android` folder in **Android Studio**.
+- Build and run the `app` module on your connected device.
+
+### 4. Start Streaming
+Run the provided stream script from your Mac terminal:
 ```bash
 ./stream.sh
 ```
+This script will:
+- Set up ADB port forwarding.
+- Start the `MacDisplay` app on your Android device.
+- Begin streaming your screen via FFmpeg.
 
 > [!TIP]
 > **Finding your Display Index**:
@@ -61,14 +77,11 @@ Run the provided stream script. This will:
 > [!NOTE]
 > You may need to grant screen recording permissions to `ffmpeg` or `Terminal` in System Settings > Privacy & Security.
 
-### 4. Stopping
-To stop the session, press `Ctrl+C` in the terminal where `stream.sh` is running.
-
-### 4. Stopping
+### 5. Stopping
 To stop the session, press `Ctrl+C` in the terminal where `stream.sh` is running.
 
 ## Troubleshooting
 
 - **No device found**: Check your USB cable and ensure "USB Debugging" is on.
-- **FFmpeg error**: Ensure you have granted Screen Recording permissions.
-- **High latency**: Use a high-quality USB cable. Software encoding (libx264) is currently used for widest compatibility, but `h264_videotoolbox` (hardware) is configured in the script for best performance.
+- **FFmpeg error**: Ensure you have granted Screen Recording permissions and that the `DISPLAY_INDEX` in `stream.sh` is correct.
+- **High latency**: Use a high-quality USB cable. The script is configured to use `h264_videotoolbox` (hardware encoding) for best performance on Mac.
