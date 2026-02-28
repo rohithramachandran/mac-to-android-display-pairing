@@ -1,0 +1,14 @@
+# Binaries
+virtual_display
+
+# Android Gradle build artifacts
+.gradle/
+build/
+app/build/
+
+# IDE files
+.idea/
+*.iml
+
+# OS files
+.DS_Store
