@@ -1,6 +1,3 @@
-# Binaries
-virtual_display
-
 # Android Gradle build artifacts
 .gradle/
 build/
