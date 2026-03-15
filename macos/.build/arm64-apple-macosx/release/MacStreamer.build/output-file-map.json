@@ -1,0 +1,25 @@
+{
+  "": {
+    "dependencies": "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/MacStreamer.d",
+    "object": "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/MacStreamer.o",
+    "swift-dependencies": "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/master.swiftdeps"
+  },
+  "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/ContentView.swift": {
+    "object": "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/ContentView.swift.o",
+    "swiftmodule": "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/ContentView~partial.swiftmodule",
+    "swift-dependencies": "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/ContentView.swiftdeps",
+    "diagnostics": "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/ContentView.dia"
+  },
+  "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/MacStreamerApp.swift": {
+    "object": "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/MacStreamerApp.swift.o",
+    "swiftmodule": "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/MacStreamerApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/MacStreamerApp.swiftdeps",
+    "diagnostics": "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/MacStreamerApp.dia"
+  },
+  "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/StreamManager.swift": {
+    "object": "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/StreamManager.swift.o",
+    "swiftmodule": "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/StreamManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/StreamManager.swiftdeps",
+    "diagnostics": "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/StreamManager.dia"
+  }
+}

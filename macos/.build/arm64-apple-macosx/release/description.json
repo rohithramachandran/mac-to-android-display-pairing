@@ -1,0 +1,283 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.MacStreamer-arm64-apple-macosx26.0-release.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/sources",
+      "importPath" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/MacStreamerApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/StreamManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "MacStreamer",
+      "moduleOutputPath" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/Modules/MacStreamer.swiftmodule",
+      "objects" : [
+        "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/ContentView.swift.o",
+        "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/MacStreamerApp.swift.o",
+        "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/StreamManager.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-whole-module-optimization",
+        "-num-threads",
+        "8",
+        "-serialize-diagnostics",
+        "-O",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "MacStreamer_main",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "macos"
+      ],
+      "outputFileMapPath" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/ContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/MacStreamerApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/StreamManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/Modules/MacStreamer.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/ContentView.swift",
+        "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/MacStreamerApp.swift",
+        "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/StreamManager.swift"
+      ],
+      "tempsPath" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build",
+      "wholeModuleOptimization" : true
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "MacStreamer" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "MacStreamer",
+      "-package-name",
+      "macos",
+      "-c",
+      "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/ContentView.swift",
+      "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/MacStreamerApp.swift",
+      "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/StreamManager.swift",
+      "-I",
+      "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-whole-module-optimization",
+      "-num-threads",
+      "8",
+      "-serialize-diagnostics",
+      "-O",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "MacStreamer_main",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "macos",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "MacStreamer" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/MacStreamerApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/StreamManager.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/sources"
+    },
+    "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/ContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/MacStreamerApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/StreamManager.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.product/Objects.LinkFileList"
+    },
+    "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

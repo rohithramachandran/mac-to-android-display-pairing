@@ -1,0 +1,66 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "MacStreamer-arm64-apple-macosx26.0-release.exe": ["<MacStreamer-arm64-apple-macosx26.0-release.exe>"]
+  "MacStreamer-arm64-apple-macosx26.0-release.module": ["<MacStreamer-arm64-apple-macosx26.0-release.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<MacStreamer-arm64-apple-macosx26.0-release.exe>","<MacStreamer-arm64-apple-macosx26.0-release.module>"]
+  "test": ["<MacStreamer-arm64-apple-macosx26.0-release.exe>","<MacStreamer-arm64-apple-macosx26.0-release.module>"]
+default: "main"
+nodes:
+  "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/ContentView.swift","/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/MacStreamerApp.swift","/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/StreamManager.swift"]
+    outputs: ["/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/sources"]
+    description: "Write auxiliary file /Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/sources"
+
+  "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/ContentView.swift.o","/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/MacStreamerApp.swift.o","/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/StreamManager.swift.o"]
+    outputs: ["/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.product/Objects.LinkFileList"
+
+  "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt"
+
+  "<MacStreamer-arm64-apple-macosx26.0-release.exe>":
+    tool: phony
+    inputs: ["/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer"]
+    outputs: ["<MacStreamer-arm64-apple-macosx26.0-release.exe>"]
+
+  "<MacStreamer-arm64-apple-macosx26.0-release.module>":
+    tool: phony
+    inputs: ["/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/ContentView.swift.o","/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/MacStreamerApp.swift.o","/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/StreamManager.swift.o","/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/Modules/MacStreamer.swiftmodule"]
+    outputs: ["<MacStreamer-arm64-apple-macosx26.0-release.module>"]
+
+  "C.MacStreamer-arm64-apple-macosx26.0-release.exe":
+    tool: shell
+    inputs: ["/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/ContentView.swift.o","/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/MacStreamerApp.swift.o","/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/StreamManager.swift.o","/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.product/Objects.LinkFileList"]
+    outputs: ["/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer"]
+    description: "Linking ./.build/arm64-apple-macosx/release/MacStreamer"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release","-o","/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer","-module-name","MacStreamer","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-dead_strip","-Xlinker","-alias","-Xlinker","_MacStreamer_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.product/Objects.LinkFileList","-target","arm64-apple-macosx13.0","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.MacStreamer-arm64-apple-macosx26.0-release.module":
+    tool: shell
+    inputs: ["/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/ContentView.swift","/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/MacStreamerApp.swift","/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/StreamManager.swift","/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/swift-version--58304C5D6DBC2206.txt","/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/sources"]
+    outputs: ["/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/ContentView.swift.o","/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/MacStreamerApp.swift.o","/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/StreamManager.swift.o","/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/Modules/MacStreamer.swiftmodule"]
+    description: "Compiling Swift Module 'MacStreamer' (3 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","MacStreamer","-emit-dependencies","-emit-module","-emit-module-path","/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/Modules/MacStreamer.swiftmodule","-output-file-map","/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/output-file-map.json","-whole-module-optimization","-num-threads","8","-c","@/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/MacStreamer.build/sources","-I","/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/Modules","-target","arm64-apple-macosx13.0","-whole-module-optimization","-num-threads","8","-serialize-diagnostics","-O","-j8","-DSWIFT_PACKAGE","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/arm64-apple-macosx/release/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","MacStreamer_main","-color-diagnostics","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","macos"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/","/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Package.swift","/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
