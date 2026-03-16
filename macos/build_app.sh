@@ -8,16 +8,20 @@ APP_BUNDLE="$DIST/$APP_NAME.app"
 DMG_PATH="$DIST/$APP_NAME.dmg"
 
 # ── Build ─────────────────────────────────────────────────────────────────────
-echo "📦 Building $APP_NAME (release)…"
+echo "📦 Building $APP_NAME as a Universal Binary (Apple Silicon + Intel)…"
 cd "$(dirname "$0")"
-swift build -c release 2>&1
+# Build for both architectures
+swift build -c release --arch arm64 --arch x86_64 2>&1
 
-BINARY=".build/release/$APP_NAME"
+# Get the bin path from Swift PM
+BIN_PATH=$(swift build -c release --arch arm64 --arch x86_64 --show-bin-path)
+BINARY="$BIN_PATH/$APP_NAME"
+
 if [ ! -f "$BINARY" ]; then
     echo "❌ Build failed – binary not found at $BINARY"
     exit 1
 fi
-echo "✅ Build succeeded"
+echo "✅ Build succeeded at $BINARY"
 
 # ── Bundle ────────────────────────────────────────────────────────────────────
 echo "🗂  Creating .app bundle…"
@@ -37,6 +41,12 @@ elif [ -f "AppIcon.png" ]; then
     cp AppIcon.png "$APP_BUNDLE/Contents/Resources/AppIcon.png"
     echo "🖼  App icon (png) copied — run sips+iconutil to get a proper dock icon"
 fi
+
+echo "🔐 Codesigning the app bundle (Ad-Hoc)…"
+# Remove quarantine attributes if present
+xattr -cr "$APP_BUNDLE" 2>/dev/null || true
+# Deep sign the application with ad-hoc signature
+codesign --force --deep --sign - "$APP_BUNDLE"
 
 echo "✅ Bundle: $APP_BUNDLE"
 

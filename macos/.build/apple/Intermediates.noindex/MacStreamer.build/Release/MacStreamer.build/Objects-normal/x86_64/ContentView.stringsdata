@@ -1,0 +1,96 @@
+{
+  "source": "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "MacStreamer",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 50
+        }
+      },
+      {
+        "comment": "",
+        "key": "No device connected",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 66
+        }
+      },
+      {
+        "comment": "",
+        "key": "Refresh",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 79
+        }
+      },
+      {
+        "comment": "",
+        "key": "Setting up…",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 108
+        }
+      },
+      {
+        "comment": "",
+        "key": "Stream Configuration",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 137
+        }
+      },
+      {
+        "comment": "",
+        "key": "List Displays",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 160
+        }
+      },
+      {
+        "comment": "",
+        "key": "×",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 174
+        }
+      },
+      {
+        "comment": "",
+        "key": "Output Log",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 226
+        }
+      },
+      {
+        "comment": "",
+        "key": "Auto-scroll",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 228
+        }
+      },
+      {
+        "comment": "",
+        "key": "Clear",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 232
+        }
+      },
+      {
+        "comment": "",
+        "key": "not found",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 333
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,26 @@
+{
+  "" : {
+    "const-values" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/apple/Intermediates.noindex/MacStreamer.build/Release/MacStreamer.build/Objects-normal/arm64/MacStreamer-primary.swiftconstvalues",
+    "dependencies" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/apple/Intermediates.noindex/MacStreamer.build/Release/MacStreamer.build/Objects-normal/arm64/MacStreamer-primary.d",
+    "diagnostics" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/apple/Intermediates.noindex/MacStreamer.build/Release/MacStreamer.build/Objects-normal/arm64/MacStreamer-primary.dia",
+    "emit-module-dependencies" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/apple/Intermediates.noindex/MacStreamer.build/Release/MacStreamer.build/Objects-normal/arm64/MacStreamer-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/apple/Intermediates.noindex/MacStreamer.build/Release/MacStreamer.build/Objects-normal/arm64/MacStreamer-primary-emit-module.dia",
+    "pch" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/apple/Intermediates.noindex/MacStreamer.build/Release/MacStreamer.build/Objects-normal/arm64/MacStreamer-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/apple/Intermediates.noindex/MacStreamer.build/Release/MacStreamer.build/Objects-normal/arm64/MacStreamer-primary.swiftdeps"
+  },
+  "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/ContentView.swift" : {
+    "index-unit-output-path" : "/MacStreamer.build/Release/MacStreamer.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/apple/Intermediates.noindex/MacStreamer.build/Release/MacStreamer.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/apple/Intermediates.noindex/MacStreamer.build/Release/MacStreamer.build/Objects-normal/arm64/ContentView.o"
+  },
+  "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/MacStreamerApp.swift" : {
+    "index-unit-output-path" : "/MacStreamer.build/Release/MacStreamer.build/Objects-normal/arm64/MacStreamerApp.o",
+    "llvm-bc" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/apple/Intermediates.noindex/MacStreamer.build/Release/MacStreamer.build/Objects-normal/arm64/MacStreamerApp.bc",
+    "object" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/apple/Intermediates.noindex/MacStreamer.build/Release/MacStreamer.build/Objects-normal/arm64/MacStreamerApp.o"
+  },
+  "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/StreamManager.swift" : {
+    "index-unit-output-path" : "/MacStreamer.build/Release/MacStreamer.build/Objects-normal/arm64/StreamManager.o",
+    "llvm-bc" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/apple/Intermediates.noindex/MacStreamer.build/Release/MacStreamer.build/Objects-normal/arm64/StreamManager.bc",
+    "object" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/apple/Intermediates.noindex/MacStreamer.build/Release/MacStreamer.build/Objects-normal/arm64/StreamManager.o"
+  }
+}

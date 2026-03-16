@@ -198,7 +198,7 @@ class StreamManager: ObservableObject {
             "-g", fps,
             "-b:v", br,
             "-f", "h264",
-            "tcp://127.0.0.1:\(pt)"
+            "tcp://127.0.0.1:\(pt)?timeout=5000000" // 5 seconds connect timeout to avoid immediate broken pipe
         ]
 
         await MainActor.run { self.addLog("▶ ffmpeg " + args.joined(separator: " "), level: .info) }
@@ -236,6 +236,13 @@ class StreamManager: ObservableObject {
         do {
             try process.run()
             process.waitUntilExit()
+            
+            // If ffmpeg exits with an error (like broken pipe), log it but don't crash
+            if process.terminationStatus != 0 {
+                await MainActor.run { 
+                    self.addLog("⚠️ ffmpeg exited with code \(process.terminationStatus) (likely Android end disconnected)", level: .warning) 
+                }
+            }
         } catch {
             await MainActor.run { self.addLog("❌ ffmpeg failed: \(error.localizedDescription)", level: .error) }
         }
@@ -243,7 +250,7 @@ class StreamManager: ObservableObject {
         pipe.fileHandleForReading.readabilityHandler = nil
         await MainActor.run {
             self.isStreaming = false
-            self.addLog("🛑 Stream ended (exit \(process.terminationStatus))", level: .warning)
+            self.addLog("🛑 Stream ended.", level: .warning)
             _ = self.runSync(self.adbPath, args: ["forward", "--remove", "tcp:\(self.port)"])
         }
     }

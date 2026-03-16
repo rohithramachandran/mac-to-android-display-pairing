@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'AllExcludingTests' in project 'Aggregate'
+➜ Explicit dependency on target 'MacStreamer_589F4CC93CDB255F_PackageProduct' in project 'MacStreamer'
+Target 'MacStreamer_589F4CC93CDB255F_PackageProduct' in project 'MacStreamer' (no dependencies)

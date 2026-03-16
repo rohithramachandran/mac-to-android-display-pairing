@@ -1,0 +1,11 @@
+{
+  "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/Sources/MacStreamer/ContentView.swift" : {
+    "abi-baseline-json" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/apple/Intermediates.noindex/MacStreamer.build/Release/MacStreamer.build/Objects-normal/arm64/MacStreamer.abi.json",
+    "const-values" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/apple/Intermediates.noindex/MacStreamer.build/Release/MacStreamer.build/Objects-normal/arm64/MacStreamer-primary.swiftconstvalues",
+    "dependencies" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/apple/Intermediates.noindex/MacStreamer.build/Release/MacStreamer.build/Objects-normal/arm64/MacStreamer-primary.d",
+    "diagnostics" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/apple/Intermediates.noindex/MacStreamer.build/Release/MacStreamer.build/Objects-normal/arm64/MacStreamer-primary.dia",
+    "swiftdoc" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/apple/Intermediates.noindex/MacStreamer.build/Release/MacStreamer.build/Objects-normal/arm64/MacStreamer.swiftdoc",
+    "swiftmodule" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/apple/Intermediates.noindex/MacStreamer.build/Release/MacStreamer.build/Objects-normal/arm64/MacStreamer.swiftmodule",
+    "swiftsourceinfo" : "/Users/rohith/workspace/workspace-personal/mac-display-app/macos/.build/apple/Intermediates.noindex/MacStreamer.build/Release/MacStreamer.build/Objects-normal/arm64/MacStreamer.swiftsourceinfo"
+  }
+}
